@@ -1,0 +1,123 @@
+package com.zplh.zplh_android_yk.utils;
+
+import android.content.Context;
+import android.os.Build;
+import android.text.ClipboardManager;
+
+import com.yk2_0.utils.AdbUtils;
+import com.zplh.zplh_android_yk.R;
+import com.zplh.zplh_android_yk.adb.WxUtils;
+import com.zplh.zplh_android_yk.base.BaseApplication;
+import com.zplh.zplh_android_yk.conf.ModelConstans;
+
+import static android.content.Context.CLIPBOARD_SERVICE;
+
+/**
+ * 常用坐标点击
+ * Created by liaoguilong on 2018-04-29 15:56:45
+ */
+public class AdbBoundsUtils {
+
+
+    /**
+     * 清除备注信息
+     */
+    public static void clearRemark() {
+        NodeUtils.clickNode("com.tencent.mm:id/aoy");//老机器点击名字
+        try {
+            Thread.sleep(2000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        NodeUtils.clickNode("com.tencent.mm:id/aoz");//酷派点击名字
+//        new WxUtils().adbDimensClick(context, R.dimen.x252, R.dimen.y89, R.dimen.x312, R.dimen.y115);//老机型清空名字
+        try {
+            Thread.sleep(2000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        switch (Build.MODEL) {
+            case ModelConstans.coolpad_8737:
+                AdbUtils.click(640, 292);
+                break;
+            case ModelConstans.tvyk:
+                AdbUtils.click(430, 220);
+//                new WxUtils().adbDimensClick(BaseApplication.getContext(), R.dimen.x252, R.dimen.y89, R.dimen.x312, R.dimen.y115);//清空名字
+                break;
+        }
+    }
+
+    /**
+     * 顶部搜索框，长按并粘贴
+     */
+    public static void searchAndPaste(Context context, String text) {
+        ClipboardManager cm = (ClipboardManager) context.getSystemService(CLIPBOARD_SERVICE);
+        cm.setText(text);
+        switch (Build.MODEL) {
+            case ModelConstans.tvyk:
+                AdbUtils.click4xy(306, 36, 378, 108);//搜索
+                break;
+            case ModelConstans.coolpad_8737:
+                AdbUtils.click4xy(504, 48, 584, 144);//酷派搜索
+                break;
+        }
+
+        NodeUtils.clickLong(null, "com.tencent.mm:id/ht");
+        switch (Build.MODEL) {
+            case ModelConstans.tvyk:
+                AdbUtils.click4xy(160, 200, 160, 128);//老机型点击粘贴
+                break;
+            case ModelConstans.coolpad_8737:
+                new WxUtils().adbClick(114, 190, 214, 278);//酷派点击粘贴
+                break;
+        }
+    }
+
+    /**
+     * /点右侧的字母#
+     */
+    public static void clickWell() {
+        switch (Build.MODEL) {
+            case ModelConstans.tvyk:
+                new WxUtils().adbDimensClick(BaseApplication.getContext(), R.dimen.x296, R.dimen.y357, R.dimen.x320, R.dimen.y365);//点井号
+                break;
+            case ModelConstans.coolpad_8737:
+                new WxUtils().adbClick(672, 1060, 720, 1076);//酷派点点井号
+                break;
+        }
+    }
+
+    /**
+     * 点右侧的字母Y
+     */
+    public static void clickToY() {
+        switch (Build.MODEL) {
+            case ModelConstans.coolpad_8737:
+                new WxUtils().adbWxClick(695, 1001);
+                new WxUtils().adbWxClick(695, 1001);
+                break;
+            case ModelConstans.tvyk:
+                new WxUtils().adbClick(460, 725, 460, 725); //直接点击右边侧滑的 Y
+                new WxUtils().adbClick(460, 725, 460, 725); //直接点击右边侧滑的 Y
+                break;
+        }
+
+
+    }
+
+    /**
+     * 选中相册中第一张图片或视频
+     */
+    public static void clickOnePhoto() {
+        switch (Build.MODEL) {
+            case ModelConstans.tvyk:
+                new WxUtils().adbClick(78, 119, 108, 149);//选中图片
+                break;
+            case ModelConstans.coolpad_8737:
+                new WxUtils().adbClick(125, 158, 165, 198);
+                break;
+        }
+    }
+
+
+}

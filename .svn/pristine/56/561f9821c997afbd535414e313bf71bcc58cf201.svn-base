@@ -1,0 +1,61 @@
+package com.yk.core.assembly.task_ty;
+
+import android.app.Activity;
+import android.content.Context;
+
+import com.yk.core.assembly.AbsExecutionProcess;
+import com.yk.core.utils.Tools;
+import com.zplh.zplh_android_yk.adb.WxUtils;
+import com.zplh.zplh_android_yk.bean.MessageListBean;
+import com.zplh.zplh_android_yk.bean.NodeXmlBean;
+import com.zplh.zplh_android_yk.utils.NodeUtils;
+import com.zplh.zplh_android_yk.utils.ShowToast;
+
+import java.util.List;
+
+/**
+ * Author：liaogulong
+ * Time: 2018/5/5/005   10:53
+ * Description：打开微信，判断是否在主页面
+ */
+public class OpenWx extends AbsExecutionProcess {
+
+
+    public OpenWx(Context context, MessageListBean.ContentBean.DataBean _dataBean) {
+        super(context, _dataBean, "打开微信");
+    }
+
+    @Override
+    public int ExecutionParsing() {
+        if (wxUtils.isInstallApp(context, "com.tencent.mm")) {//判断微信是否安装
+            wxUtils.openWx((Activity) context);//打开微信
+            Tools.ThreadTools.sleep(3); //睡眠
+            xmlData = wxUtils.getXmlData();
+            if (xmlData.contains("安全警告") && xmlData.contains("wx助手 正在尝试") && xmlData.contains("记住我的选择。")) {
+                NodeUtils.clickNode("记住我的选择。", "com.mediatek.security:id/checkbox");
+                NodeUtils.clickNode("允许", "android:id/button1");
+            }
+            xmlData = wxUtils.getXmlData();
+            if (xmlData.contains("更新") && xmlData.contains("取消") && xmlData.contains("立刻安装")) {
+                List<String> ud = wxUtils.getNodeList(xmlData);
+                for (int a = 0; a < ud.size(); a++) {
+                    NodeXmlBean.NodeBean nodeBean = wxUtils.getNodeXmlBean(ud.get(a)).getNode();
+                    if (nodeBean != null && nodeBean.getText() != null && nodeBean.getText().contains("取消")) {
+                        NodeUtils.clickNode("取消", "com.tencent.mm:id/alk");
+                        NodeUtils.clickNode("是", "com.tencent.mm:id/all");
+                        break;
+                    }
+                }
+            }
+            xmlData = wxUtils.getXmlData();
+            if (xmlData.contains("忘记密码") || (xmlData.contains("登录") && xmlData.contains("注册") && xmlData.contains("语言")) || (xmlData.contains("你的手机号码") && xmlData.contains("密码"))) {
+                //判断是否登录
+                ShowToast.show("请先登录微信", (Activity) context);
+                return 0;
+            }
+            return 1;
+        }
+        setTaskLog("未安装微信客户端");
+        return 0;
+    }
+}

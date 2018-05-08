@@ -1,0 +1,26 @@
+[
+    {
+        "outputFile": "C:\\liaoguilong\\yk_android_dev\\corelibrary\\build\\intermediates\\incremental\\mergeReleaseResources\\merged.dir\\values\\values.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 2,
+                    "startColumn": 4,
+                    "startOffset": 55,
+                    "endColumn": 48,
+                    "endOffset": 99
+                },
+                "from": {
+                    "file": "C:\\liaoguilong\\yk_android_dev\\corelibrary\\src\\main\\res\\values\\strings.xml",
+                    "position": {
+                        "startLine": 1,
+                        "startColumn": 4,
+                        "startOffset": 17,
+                        "endColumn": 48,
+                        "endOffset": 61
+                    }
+                }
+            }
+        ]
+    }
+]

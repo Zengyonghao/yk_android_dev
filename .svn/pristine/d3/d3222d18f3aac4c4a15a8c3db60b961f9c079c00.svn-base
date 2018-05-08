@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<litepal>
+    <dbname value="iber" >
+    </dbname>
+    <version value="1" >
+    </version>
+    <list>
+        <mapping class="com.zplh.zplh_android_yk.bean.KeyWordData"></mapping><!-- 历史搜索记录-->
+    </list>
+</litepal>

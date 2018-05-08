@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<litepal>
+    <dbname value="yksj_litepal"></dbname>
+    <version value="5"></version>
+    <list>
+        <mapping class="com.zplh.zplh_android_yk.bean.AlipayAlterNameSqliteBean"></mapping><!-- 支付宝修改备注-->
+        <mapping class="com.zplh.zplh_android_yk.bean.TaskLogIdBean"></mapping><!-- 保存任务logid-->
+        <mapping class="com.zplh.zplh_android_yk.bean.PublicMarkBean"></mapping><!-- 公众号阅读时间，同天不浏览-->
+    </list>
+</litepal>

@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="C:\liaoguilong\yk_android_dev\app\lib\XposedBridgeApi-54.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="5f16da4d2ecb2c95be2556550e4a63461f43a99b">
+        <dex dex="C:\liaoguilong\yk_android_dev\app\build\intermediates\pre-dexed\debug\XposedBridgeApi-54_811e92e1fb4df8c287a1fe02e3c4b650aede0cfb.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Administrator\.android\build-cache\aefa085ba99d71e200e5466b4404ba9f4b6cd84d\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="27.0.3"
+        sha1="1059f32e7de57a16774d7f05b059d978c4ec4c91">
+        <dex dex="C:\liaoguilong\yk_android_dev\corelibrary\build\intermediates\pre-dexed\androidTest\debug\classes_8e799e6c44fbb6ae915e95a8c569fa426420fd14.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\liaoguilong\yk_android_dev\app\libs\litepal-1.2.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="2c1ec2b61bc728f626ae598015b48349fd331a08">
+        <dex dex="C:\liaoguilong\yk_android_dev\app\build\intermediates\pre-dexed\debug\litepal-1.2.0_a60bbdc1aeb93a94033fdf1ecb65479b29a8115a.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\liaoguilong\yk_android_dev\app\libs\litepal-1.2.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="2c1ec2b61bc728f626ae598015b48349fd331a08">
+        <dex dex="C:\liaoguilong\yk_android_dev\app\build\intermediates\transforms\dex\debug\folders\1000\2\litepal-1.2.0_a60bbdc1aeb93a94033fdf1ecb65479b29a8115a\classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Administrator\.android\build-cache\397a35e5c51a21f56b9c1113fd075cf566b96dc5\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="27.0.3"
+        sha1="7e11799d8a26bfa5d48acafe012ee5545b9bf468">
+        <dex dex="C:\liaoguilong\yk_android_dev\corelibrary\build\intermediates\pre-dexed\androidTest\debug\classes_819f1e300be980da9da6db72d1cfb85b37677ab7.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\liaoguilong\sdk\extras\android\m2repository\com\android\support\support-annotations\23.1.1\support-annotations-23.1.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="27.0.3"
+        sha1="8d680ba5a623724d1fb0e81c36a790f023a6cede">
+        <dex dex="C:\liaoguilong\yk_android_dev\corelibrary\build\intermediates\pre-dexed\androidTest\debug\support-annotations-23.1.1_1d4d2fd366b298b14bc4e82f6d9ed0c46811b0e2.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\liaoguilong\yk_android_dev\app\libs\gson-2.2.4.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="a60a5e993c98c864010053cb901b7eab25306568">
+        <dex dex="C:\liaoguilong\yk_android_dev\app\build\intermediates\pre-dexed\debug\gson-2.2.4_d6c7e8611936480f07ea51671425b9ab85f94eab.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Administrator\.android\build-cache\95738aefdc3d6de1585e3c635e60dfbd298402d3\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="27.0.3"
+        sha1="905f3e63973d47fedf2d945fa31d8c0f0c98816e">
+        <dex dex="C:\liaoguilong\yk_android_dev\corelibrary\build\intermediates\pre-dexed\androidTest\debug\classes_8d7eb2fc60f6c2d0dcb05f6513938da075f87682.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\liaoguilong\yk_android_dev\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="3be78ebc2706b2e1fe2f12d5726887a92d6c183b">
+        <dex dex="C:\liaoguilong\yk_android_dev\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run_22e7301152a354e878a3d8bdb2c532eb09355b59\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\liaoguilong\yk_android_dev\app\libs\gson-2.2.4.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="a60a5e993c98c864010053cb901b7eab25306568">
+        <dex dex="C:\liaoguilong\yk_android_dev\app\build\intermediates\transforms\dex\debug\folders\1000\2\gson-2.2.4_d6c7e8611936480f07ea51671425b9ab85f94eab\classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\liaoguilong\yk_android_dev\app\libs\jpush-android_v3.0.6.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="cc50cc7009c634f3222609dae2d60d5ad888015a">
+        <dex dex="C:\liaoguilong\yk_android_dev\app\build\intermediates\pre-dexed\debug\jpush-android_v3.0.6_7e58e5f8d9982dea31d2062d40a6917e4edad43f.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\liaoguilong\yk_android_dev\app\libs\jpush-android_v3.0.6.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="cc50cc7009c634f3222609dae2d60d5ad888015a">
+        <dex dex="C:\liaoguilong\yk_android_dev\app\build\intermediates\transforms\dex\debug\folders\1000\2\jpush-android_v3.0.6_7e58e5f8d9982dea31d2062d40a6917e4edad43f\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\liaoguilong\yk_android_dev\app\lib\XposedBridgeApi-54.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="5f16da4d2ecb2c95be2556550e4a63461f43a99b">
+        <dex dex="C:\liaoguilong\yk_android_dev\app\build\intermediates\transforms\dex\debug\folders\1000\2\XposedBridgeApi-54_811e92e1fb4df8c287a1fe02e3c4b650aede0cfb\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\liaoguilong\yk_android_dev\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="0c4c51e6b635b913ffa638f359938b8b7baea31d">
+        <dex dex="C:\liaoguilong\yk_android_dev\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run-bootstrap_f27028de926a098553a8fe88528b7e50d871a091\classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\liaoguilong\yk_android_dev\corelibrary\build\intermediates\bundles\default\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="84768c5379d0ffb3c3611c6d67ccc76427bbc112">
+        <dex dex="C:\liaoguilong\yk_android_dev\app\build\intermediates\pre-dexed\debug\classes_dc377354843497ca1bb9bbb1be9b266462cb4d3c.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\liaoguilong\yk_android_dev\app\libs\volley.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="4a94601db9bdfb7dc60efabb3dea91a0675f591d">
+        <dex dex="C:\liaoguilong\yk_android_dev\app\build\intermediates\pre-dexed\debug\volley_82e7f95e8740e538abca3a5b263cf2ce48fe2195.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Administrator\.gradle\caches\modules-2\files-2.1\org.hamcrest\hamcrest-core\1.3\42a25dc3219429f0e5d060061f71acb49bf010a0\hamcrest-core-1.3.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="27.0.3"
+        sha1="42a25dc3219429f0e5d060061f71acb49bf010a0">
+        <dex dex="C:\liaoguilong\yk_android_dev\corelibrary\build\intermediates\pre-dexed\androidTest\debug\hamcrest-core-1.3_2323b0689b69c651dc52b5f9e0fa5ab289cff959.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\liaoguilong\yk_android_dev\app\libs\jcore-android_v1.1.3.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="e872ea5454bca71af461e037dd07c4ca9e73dcf4">
+        <dex dex="C:\liaoguilong\yk_android_dev\app\build\intermediates\transforms\dex\debug\folders\1000\2\jcore-android_v1.1.3_14f1cc69cb5baa312ae2791233b63bc87ecc1fa5\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\liaoguilong\yk_android_dev\app\libs\volley.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="4a94601db9bdfb7dc60efabb3dea91a0675f591d">
+        <dex dex="C:\liaoguilong\yk_android_dev\app\build\intermediates\transforms\dex\debug\folders\1000\2\volley_82e7f95e8740e538abca3a5b263cf2ce48fe2195\classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\liaoguilong\yk_android_dev\app\libs\jcore-android_v1.1.3.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="e872ea5454bca71af461e037dd07c4ca9e73dcf4">
+        <dex dex="C:\liaoguilong\yk_android_dev\app\build\intermediates\pre-dexed\debug\jcore-android_v1.1.3_14f1cc69cb5baa312ae2791233b63bc87ecc1fa5.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\liaoguilong\yk_android_dev\app\libs\wtoolsdk.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="e6087d4e43da499d03e53a4b51d6a7e72b21d42f">
+        <dex dex="C:\liaoguilong\yk_android_dev\app\build\intermediates\pre-dexed\debug\wtoolsdk_add38c352c1fa0c92edaf78e0b58fea136c2a9a7.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\liaoguilong\yk_android_dev\app\libs\wtoolsdk.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="e6087d4e43da499d03e53a4b51d6a7e72b21d42f">
+        <dex dex="C:\liaoguilong\yk_android_dev\app\build\intermediates\transforms\dex\debug\folders\1000\2\wtoolsdk_add38c352c1fa0c92edaf78e0b58fea136c2a9a7\classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Administrator\.gradle\caches\modules-2\files-2.1\junit\junit\4.12\2973d150c0dc1fefe998f834810d68f278ea58ec\junit-4.12.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="27.0.3"
+        sha1="2973d150c0dc1fefe998f834810d68f278ea58ec">
+        <dex dex="C:\liaoguilong\yk_android_dev\corelibrary\build\intermediates\pre-dexed\androidTest\debug\junit-4.12_bca4fc0211375ff0eb614e87bd80b4259fbed036.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Administrator\.android\build-cache\24756eef62f262e7735e586d398baf6a655ddddc\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="27.0.3"
+        sha1="796f9229948e907471c5595fbe94655ccf03ff73">
+        <dex dex="C:\liaoguilong\yk_android_dev\corelibrary\build\intermediates\pre-dexed\androidTest\debug\classes_447b22e94afbf406597ad84daa2f2610afeb4edc.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\liaoguilong\yk_android_dev\app\libs\bugly_crash_release.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="11a294f511cf1e23f525c87ca4cc1d92c9f3d6a2">
+        <dex dex="C:\liaoguilong\yk_android_dev\app\build\intermediates\transforms\dex\debug\folders\1000\2\bugly_crash_release_a55dc3997edc19442c2b6b96d5a9b9abeac45183\classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\liaoguilong\yk_android_dev\app\libs\bugly_crash_release.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="11a294f511cf1e23f525c87ca4cc1d92c9f3d6a2">
+        <dex dex="C:\liaoguilong\yk_android_dev\app\build\intermediates\pre-dexed\debug\bugly_crash_release_a55dc3997edc19442c2b6b96d5a9b9abeac45183.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\liaoguilong\yk_android_dev\corelibrary\build\intermediates\bundles\debug\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="27.0.3"
+        sha1="51d23c0c0a6e3985f8bae3bb35bdb96686bc41f7">
+        <dex dex="C:\liaoguilong\yk_android_dev\corelibrary\build\intermediates\pre-dexed\androidTest\debug\classes_8415cc1035a12042abb1f513d5140a0c7a73dcbe.jar" />
+    </item>
+
+</items>

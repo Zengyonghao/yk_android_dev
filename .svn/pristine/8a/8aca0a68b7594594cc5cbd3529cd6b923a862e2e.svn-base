@@ -1,0 +1,64 @@
+package com.yk.core.assembly;
+
+
+import android.app.Activity;
+import android.content.Context;
+import android.util.Log;
+
+
+import com.yk.core.interfaces.IExecutionProcess;
+import com.yk.core.utils.Tools;
+import com.zplh.zplh_android_yk.adb.WxUtils;
+import com.zplh.zplh_android_yk.bean.MessageListBean;
+import com.zplh.zplh_android_yk.utils.ShowToast;
+
+/**
+ * Author:liaoguilong
+ * Date 2018年5月3日 19:17:13
+ * FIXME
+ * Todo  职责组装的抽象方法
+ */
+public abstract class AbsExecutionProcess implements IExecutionProcess {
+
+    private static final String TAG = "AbsExecutionProcess";
+
+    protected Context context;
+    protected MessageListBean.ContentBean.DataBean dataBean;
+    protected IExecutionProcess _Next; //下一步任务
+    protected String _taskMessage;
+    protected WxUtils wxUtils = new WxUtils();
+    protected String xmlData;
+
+    public AbsExecutionProcess(Context context, MessageListBean.ContentBean.DataBean dataBean, String taskMessage) {
+        this.context = context;
+        this.dataBean = dataBean;
+        this._taskMessage = taskMessage;
+    }
+
+    @Override
+    public void Execution() {
+        try {
+            int i = ExecutionParsing();
+            Log.e(TAG, "开始执行：" + _taskMessage);
+            if (i > 0) { //大于0 继续下一个处理
+                if (Tools.ObjectTools.isNotNull(_Next)) {
+                    _Next.Execution();
+                }
+            }
+        } catch (Exception e) {
+            Log.e(TAG, "Execution()-->" + e.getMessage());
+        }
+    }
+
+    public void setTaskLog(String log) {
+        Log.e(TAG, _taskMessage + "->：" + log);
+    }
+
+    /**
+     * 执行子类操作
+     *
+     * @return
+     */
+    public abstract int ExecutionParsing();
+
+}

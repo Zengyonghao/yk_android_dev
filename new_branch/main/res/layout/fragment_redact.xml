@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/background_color">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="编辑"
+        android:visibility="gone"
+        android:gravity="center"/>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="账号素材"
+            android:gravity="center"
+            android:drawableTop="@mipmap/ic_launcher"
+            android:textColor="@color/textcolor"
+            android:background="@color/white"
+            android:padding="10dp"
+            />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="1dp"
+            android:layout_height="wrap_content"
+            android:drawableTop="@mipmap/ic_launcher"
+            android:text="发朋友圈素材"
+            android:gravity="center"
+            android:textColor="@color/textcolor"
+            android:background="@color/white"
+            android:padding="10dp"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="分享网址素材"
+            android:gravity="center"
+            android:drawableTop="@mipmap/ic_launcher"
+            android:textColor="@color/textcolor"
+            android:background="@color/white"
+            android:padding="10dp"
+            />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:drawableTop="@mipmap/ic_launcher"
+            android:layout_marginLeft="1dp"
+            android:text="好友发消息素材"
+            android:gravity="center"
+            android:textColor="@color/textcolor"
+            android:background="@color/white"
+            android:padding="10dp"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="搜索家好友素材"
+            android:gravity="center"
+            android:drawableTop="@mipmap/ic_launcher"
+            android:textColor="@color/textcolor"
+            android:background="@color/white"
+            android:padding="10dp"
+            />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:drawableTop="@mipmap/ic_launcher"
+            android:layout_marginLeft="1dp"
+            android:text="关注公众号素材"
+            android:gravity="center"
+            android:textColor="@color/textcolor"
+            android:background="@color/white"
+            android:padding="10dp"
+            />
+    </LinearLayout>
+
+</LinearLayout>
+
